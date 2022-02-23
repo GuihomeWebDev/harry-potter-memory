@@ -11,7 +11,7 @@ define('BASE_VIEW_PATH', dirname((__DIR__)) . DIRECTORY_SEPARATOR . 'App' . DIRE
 
 //routing voir router.php
 $router = new Router();
-//la metode register revois la route (/ )" et on lui passe la méthode index de la classe HomeController
+//la methode register revois la route (/ )" et on lui passe la méthode index de la classe HomeController
 $router->register('/', ['App\Controllers\HomeController', 'index']);
 
 // ici on "attrape le retour de la methode resolve soit la route / sinon on renvoie une erreur (methode pedagogique à ne pas utiliser en production)
